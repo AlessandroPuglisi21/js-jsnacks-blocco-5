@@ -15,13 +15,11 @@ const zucchinaGT15 = [];
 const zucchinaLOW15 = []
 // A partire dall'array fornito, crea due array. Uno con le zucchine più lunghe di almeno 15cm. L'altro con le restanti.
 
-zucchine.forEach((el) => {
-  if(el.length >= 15)
-    zucchinaGT15.push(el)
-  else 
-  zucchinaLOW15.push(el)
+const lunghezza = zucchine.find((element) =>{
+  if(element.length >= 15){
+   zucchinaGT15.push(` ${element.type} ha lunghezza: ${element.length} Cm`)
+  }
+  zucchinaLOW15.push(` ${element.type} ha lunghezza: ${element.length} Cm`)
 })
-
-
-console.log(zucchinaGT15);
-console.log(zucchinaLOW15);
+console.log(zucchinaGT15)
+console.log(zucchinaLOW15)
