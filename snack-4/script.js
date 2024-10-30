@@ -5,12 +5,20 @@ const posts = [
   { author: 'Enrico', date: '09/12/2021', content: 'lorem ipsum...' },
 ]
 
-let nomiAutori = []
+// let nomiAutori = []
 // Crea un nuovo array coi nomi di tutti gli autori
 // Risultato: ['Marco', 'Luca', 'Fabrizio', 'Enrico']
 
-posts.forEach((nome) => {
-  nomiAutori.push(nome.author)
-})
+// posts.forEach((nome) => {
+//   nomiAutori.push(nome.author)
+// })
 
-console.log(nomiAutori)
+// console.log(nomiAutori)
+
+const authorNames = posts.map(names => names.author)
+
+console.log(authorNames)
+
+// authorDivided = authorNames.join("-")
+
+// console.log(authorDivided)
